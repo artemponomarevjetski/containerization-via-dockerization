@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is the master table script file
+script file inside the container
 """
 #
 import csv
@@ -62,10 +59,10 @@ def main(working_dir_, source_date_):
 #    cwd = os.path.realpath(os.path.dirname(__file__)) #os.getcwd() # ./
     working_dir = working_dir_
     date_ = source_date_
-    database = 'qai'
-    server = 'cd5m7wkqacpdeus2mia12301.public.dabc3424290b.database.windows.net,3342'
-    username = 'a123.joe.petviashvili'
-    password = '9tdnLh%rm#K51!HW'
+    database = 'xxx'
+    server = 'xxx'
+    username = 'xxx'
+    password = 'xxx'
 #Authentication: SQL Server Authentication
     # NOTE: The following works on a Mac with the MSSQL 13 driver installed - it is here as the
     # default because Art's Anaconda environment doesn't show a non-empty list of drivers from
@@ -78,7 +75,7 @@ def main(working_dir_, source_date_):
     #
     cnxn = pyodbc.connect('DRIVER=' + driver +
                           ';SERVER=' + server +
-                          ';PORT=1433;DATABASE=' + database +
+                          ';PORT=xxx;DATABASE=' + database +
                           ';UID=' + username +
                           ';PWD=' + password)
     cursor_ = cnxn.cursor()
@@ -215,7 +212,7 @@ SELECT DISTINCT
                         print("\n\nre-opening server connection...", datetime.now())
                         cnxn = pyodbc.connect('DRIVER='+driver+
                                               ';SERVER='+server+
-                                              ';PORT=1433;DATABASE='+database+
+                                              ';PORT=xxx;DATABASE='+database+
                                               ';UID='+username+
                                               ';PWD='+password)
                         cursor_ = cnxn.cursor()
@@ -232,7 +229,7 @@ SELECT DISTINCT
                     print("\n\nre-opening server connection...", datetime.now())
                     cnxn = pyodbc.connect('DRIVER='+driver+
                                           ';SERVER='+server+
-                                          ';PORT=1433;DATABASE='+database+
+                                          ';PORT=xxx;DATABASE='+database+
                                           ';UID='+username+
                                           ';PWD='+password)
                     cursor_ = cnxn.cursor()
@@ -322,7 +319,7 @@ if __name__ == '__main__':
         '--working-directory',
         type=str, # make it start with ./ and end with /
         default=None,
-        help='call Art at 409-443-4701, he\'ll refer you to Neeraj'
+        help='call Art at 409-443-4701'
     )
     PARSER.add_argument(
         '-s',
