@@ -1,8 +1,6 @@
-/anaconda3/bin/python corporate_events.py  --working-directory /Users/artemponomarevatfora/Desktop/FORA/Refinitiv/refinitiv/RefinitivDataRepository/timestamped_corporate_events/ --source-date 2019-12-19
- 
-/anaconda3/bin/python diff_between_timestamped_records.py  --working-directory /Users/artemponomarevatfora/Desktop/FORA/Refinitiv/refinitiv/RefinitivDataRepository/timestamped_corporate_events/
+/anaconda3/bin/python diff_between_timestamped_records.py  --working-directory /xxx/
 
-git status; git pull; git add ManualLookUpOfTickers.csv; git commit -m "Art's manual ticker look up"; git push
+git status; git pull; git add xxx.csv; git commit -m "Art's manual ticker look up"; git push
 
 git status; git pull; git add test.py; git commit -m "Art's SQL/Python script"; git push
 
