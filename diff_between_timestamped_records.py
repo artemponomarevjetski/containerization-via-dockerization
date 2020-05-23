@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is the master table script file
+script file
 """
 #
 import csv
@@ -161,7 +158,7 @@ if __name__ == '__main__':
         '--working-directory',
         type=str, # make it start with ./ and end with /
         default=None,
-        help='call Art at 409-443-4701, he\'ll refer you to Neeraj'
+        help='call Art at 409-443-4701'
     )
 
     ARGS = PARSER.parse_args()
