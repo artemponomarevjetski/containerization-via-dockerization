@@ -1,0 +1,17 @@
+/anaconda3/bin/python corporate_events.py  --working-directory /Users/artemponomarevatfora/Desktop/FORA/Refinitiv/refinitiv/RefinitivDataRepository/timestamped_corporate_events/ --source-date 2019-12-19
+ 
+/anaconda3/bin/python diff_between_timestamped_records.py  --working-directory /Users/artemponomarevatfora/Desktop/FORA/Refinitiv/refinitiv/RefinitivDataRepository/timestamped_corporate_events/
+
+git status; git pull; git add ManualLookUpOfTickers.csv; git commit -m "Art's manual ticker look up"; git push
+
+git status; git pull; git add test.py; git commit -m "Art's SQL/Python script"; git push
+
+/anaconda3/bin/python test.py   --start-date 1990-01-01 --working-directory ./temp/ --nblocks 100 --archive --email-notification
+
+/anaconda3/bin/python test.py   --start-date 2017-12-01 --working-directory ./temp/ --nblocks 100 --archive 
+
+/anaconda3/bin/python test.py   --start-date 2017-12-01 --working-directory ./temp/ --nblocks 100 --archive --top 10000
+
+/anaconda3/bin/python test.py  --start-date 2010-01-01 --working-directory ./temp/ --nblocks 100 --top 10000 > log.txt
+
+python test.py --top 100 -s 2019-11-01 -d ./temp/ -n 100
